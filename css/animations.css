@@ -1,0 +1,22 @@
+/* Animation keyframes & utilities */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes bgShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+.animated-bg{background:linear-gradient(120deg,#0B3D2E,#1B5E20,#00E676,#0B3D2E);background-size:300% 300%;animation:bgShift 15s ease infinite}
+
+.split-char{display:inline-block;opacity:0;transform:translateY(40px) rotate(8deg);animation:fadeInUp .8s var(--ease) forwards}
+
+.magnetic{transition:transform .25s ease-out}
+
+.float-anim{animation:floatY 6s ease-in-out infinite}
+@keyframes floatY{50%{transform:translateY(-15px)}}
+
+/* Particle dots */
+.particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.particles .p{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:.5;animation:rise 12s linear infinite}
+@keyframes rise{0%{transform:translateY(110vh) scale(.6);opacity:0}10%{opacity:.7}90%{opacity:.7}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}

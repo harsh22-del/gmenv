@@ -1,0 +1,10 @@
+/* Reusable component utilities */
+.glass{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--border);border-radius:20px}
+.text-gradient{background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;color:transparent}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:60px 0}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(0,230,118,.1);color:var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(0,230,118,.25)}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px}
+.tag-list .tag{padding:6px 14px;background:var(--glass);border:1px solid var(--border);border-radius:999px;font-size:.78rem;color:var(--text-muted)}
+
+/* Image fallback shimmer */
+.skeleton{background:linear-gradient(90deg,#0d2419,#143527,#0d2419);background-size:200% 100%;animation:shimmer 1.4s infinite}
